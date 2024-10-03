@@ -22,7 +22,8 @@ export default function Login() {
     return (
         <div style={styles.container}>  
             <form onSubmit={login} style={styles.form}>
-                <h2 >Login</h2>
+                <h2 style={styles.title}>Login</h2>
+              
                 <div style={styles.inputGroup}>
                     <label htmlFor="email">E-mail:</label>
                     <input  
@@ -78,5 +79,8 @@ const styles = {
     error: {
         color: 'red',
         marginTop: '1rem',
+    },
+    title: {
+        marginBottom: '20px' ,
     },
 };
